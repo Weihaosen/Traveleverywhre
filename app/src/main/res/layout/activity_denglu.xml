@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/re"
+    tools:context="compp.cumulus.traveleverywhre.activity.DengluActivity">
+    
+    <ImageView
+        android:id="@+id/fan"
+        android:src="@mipmap/back_white"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_22"
+        android:text="为了您的账号安全"
+        android:layout_marginTop="@dimen/dp_73"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:textColor="#FFFA6A13"
+        android:textSize="@dimen/sp_16"
+        /> />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_104"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:text="请绑定手机号"
+        android:textColor="#FF373737"
+        android:textSize="@dimen/sp_27"
+        />
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp_248"
+        android:layout_marginLeft="@dimen/dp_31"
+        android:background="@mipmap/phone"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_21" />
+    <TextView
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_249"
+        android:layout_marginLeft="@dimen/dp_53"
+        android:text="+86"
+        android:textColor="#FF636363"
+        android:textSize="@dimen/sp_14"
+        />
+    <EditText
+        android:id="@+id/ed_shou"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp_248"
+        android:layout_marginLeft="@dimen/dp_106"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_22"
+        android:hint="请输入手机号码"
+        android:textColor="#FFC8C8C8"
+        android:textSize="@dimen/sp_16"
+        />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="@dimen/dp_244"
+        android:layout_marginLeft="@dimen/dp_263"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_30"
+        android:background="@mipmap/button_unavailable"
+        />
+    <TextView
+        android:id="@+id/te_yan"
+        android:layout_marginTop="@dimen/dp_249"
+        android:layout_marginLeft="@dimen/dp_273"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_20"
+        android:text="发送验证码"
+        android:textColor="#FFFEFEFE"
+        android:textSize="@dimen/sp_14"
+        />
+    <View
+        android:layout_marginTop="@dimen/dp_279"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_width="@dimen/dp_329"
+        android:layout_height="@dimen/dp_1"
+        android:background="#FFFA6A13"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_18"
+        android:text="登录或注册即同意伴米旅行用户协议"
+        android:layout_marginTop="@dimen/dp_470"
+        android:layout_marginLeft="@dimen/dp_83"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/sp_13"
+        />
+</RelativeLayout>

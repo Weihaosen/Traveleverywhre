@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="compp.cumulus.traveleverywhre.activity.ChatActivity">
+<android.support.design.widget.TabLayout
+    android:id="@+id/ta"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_74"/>
+    <ImageView
+        android:id="@+id/dao"
+        android:src="@mipmap/back_white"
+        android:layout_marginLeft="@dimen/dp_21"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25" />
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/dp_74"
+        android:id="@+id/vi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
