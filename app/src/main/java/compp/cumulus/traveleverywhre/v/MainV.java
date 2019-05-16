@@ -1,5 +1,7 @@
 package compp.cumulus.traveleverywhre.v;
 
+import android.app.Activity;
+
 import compp.cumulus.traveleverywhre.base.BaseView;
 
 /**
@@ -7,4 +9,8 @@ import compp.cumulus.traveleverywhre.base.BaseView;
  */
 
 public interface MainV extends BaseView {
+    Activity getAct();
+
+    void go2MainActivity();
+
 }

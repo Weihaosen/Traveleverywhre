@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="compp.cumulus.traveleverywhre.activity.OtherActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@drawable/back_white"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30" />
+        <TextView
+            android:id="@+id/te_biaoti"
+            android:textSize="@dimen/sp_15"
+            android:text="@string/agentweb_cancel"
+            android:layout_marginLeft="@dimen/dp_115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
+    <WebView
+        android:id="@+id/web"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</RelativeLayout>

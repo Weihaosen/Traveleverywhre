@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="compp.cumulus.traveleverywhre">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <!-- 必须的权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -14,6 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".base.BaseApp"
@@ -23,16 +26,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"
-            android:theme="@style/Fullscreen"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.DengluActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Fullscreen" />
         <activity android:name=".activity.YanzhengActivity" />
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -50,21 +47,25 @@
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".thirdparty.Weixin"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
+            android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.umeng.socialize.media.WBShareCallBackActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false"
+            android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false"
+            android:launchMode="singleInstance"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
@@ -77,7 +78,63 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ChatActivity" />
-        <activity android:name=".activity.MessageActivity"></activity>
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.WebviewActivity" />
+        <activity
+            android:name=".activity.HollActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.PersonalActivity" />
+        <activity
+            android:name=".activity.UpnameActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.UpsignatureActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.GuidanceActivity" />
+        <activity android:name=".activity.UpheadportraitActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.baidu.upload.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Splashp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FollowActivity" />
+        <activity
+            android:name=".activity.HolldetailsActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.CollectActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.AllcommentsActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.PanmidetailsActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.OtherActivity"
+            android:launchMode="singleInstance" />
+
+        <meta-data
+            android:name="daochulvxing"
+            android:value="${CHANNEL_VALUE}" />
+
+        <activity android:name=".activity.VersionActivity"></activity>
     </application>
 
 </manifest>

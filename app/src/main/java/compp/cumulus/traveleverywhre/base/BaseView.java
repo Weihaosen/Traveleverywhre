@@ -5,4 +5,5 @@ package compp.cumulus.traveleverywhre.base;
  */
 
 public interface BaseView {
+
 }

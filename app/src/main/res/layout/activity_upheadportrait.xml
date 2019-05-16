@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="compp.cumulus.traveleverywhre.activity.UpheadportraitActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:id="@+id/back"
+            android:background="@mipmap/back_white"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="个人头像"
+        android:textSize="@dimen/sp_17" />
+
+    <ImageView
+        android:id="@+id/zhanwei"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        android:background="@drawable/umeng_socialize_share_video" />
+    <TextView
+        android:text="完成"
+        android:id="@+id/wancheng"
+        android:textSize="@dimen/sp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone" />
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@color/c_333333"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400" />
+</LinearLayout>

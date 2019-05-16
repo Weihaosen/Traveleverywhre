@@ -8,7 +8,8 @@ import io.reactivex.disposables.Disposable;
  */
 
 public class Basemodel{
-    protected CompositeDisposable mCompositeDisposable = new CompositeDisposable();
+    protected CompositeDisposable mCompositeDisposable;
+
     public void onDestory() {
         mCompositeDisposable.clear();
     }

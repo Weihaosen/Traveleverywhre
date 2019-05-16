@@ -34,16 +34,17 @@
             android:layout_marginLeft="@dimen/dp_10"
             android:layout_width="@dimen/dp_62"
             android:layout_height="@dimen/dp_17"
-            android:layout_marginTop="@dimen/dp_10"/>
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/textView" />
+
         <TextView
-            android:layout_marginTop="@dimen/dp_33"
-            android:layout_marginLeft="@dimen/dp_10"
             android:layout_width="@dimen/dp_208"
             android:layout_height="@dimen/dp_22"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
             android:text="请问日本的西瓜卡怎么办理？"
             android:textColor="#FF636363"
-            android:textSize="@dimen/sp_16"
-            />
+            android:textSize="@dimen/sp_16" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginRight="@dimen/dp_20"

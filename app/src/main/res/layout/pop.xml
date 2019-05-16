@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    >
+ <Button
+    android:id="@+id/pai"
+    android:text="拍照"
+     android:textColor="@color/c_333333"
+     android:background="@color/c_F0F0F0"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50" />
+    <Button
+        android:id="@+id/xuanzhe"
+        android:text="从手机相册选择"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/c_333333"
+        android:background="@color/c_F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+    <Button
+        android:id="@+id/quxiao"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="取消上传"
+        android:textColor="@color/c_333333"
+        android:background="@color/c_F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+</LinearLayout>

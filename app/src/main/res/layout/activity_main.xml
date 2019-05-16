@@ -31,7 +31,7 @@
         android:layout_marginTop="@dimen/dp_248"
         android:layout_marginLeft="@dimen/dp_31"
         android:background="@mipmap/phone"
-        android:layout_width="@dimen/dp_14"
+        android:layout_width="@dimen/dp_20"
         android:layout_height="@dimen/dp_21"
         android:id="@+id/imageView" />
     <TextView
@@ -57,11 +57,11 @@
         android:textSize="@dimen/sp_16" />
     <ImageView
         android:id="@+id/img"
-        android:layout_marginTop="@dimen/dp_244"
+        android:layout_marginTop="@dimen/dp_238"
         android:layout_marginLeft="@dimen/dp_263"
         android:layout_width="@dimen/dp_90"
-        android:layout_height="@dimen/dp_30"
-        android:background="@mipmap/button_unavailable"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/button_unavailable"
         />
     <TextView
         android:id="@+id/te_yan"
@@ -137,12 +137,13 @@
             />
     </LinearLayout>
     <TextView
+        android:id="@+id/Protocol"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_18"
         android:text="@string/Bylogginginorregistering"
         android:layout_marginTop="@dimen/dp_470"
-        android:layout_marginLeft="@dimen/dp_83"
+        android:layout_marginLeft="@dimen/dp_73"
         android:textColor="@color/c_FF999999"
         android:textSize="@dimen/sp_13"
         android:layout_marginBottom="@dimen/dp_21"

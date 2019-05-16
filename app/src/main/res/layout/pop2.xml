@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/nan"
+        android:text="男"
+        android:textColor="@color/c_333333"
+        android:background="@color/dedede"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+    <Button
+        android:id="@+id/nv"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="女"
+        android:textColor="@color/c_333333"
+        android:background="@color/dedede"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+    <Button
+        android:id="@+id/renyao"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="人妖"
+        android:textColor="@color/c_333333"
+        android:background="@color/dedede"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+    <Button
+        android:id="@+id/qu"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="取消"
+        android:textColor="@color/c_333333"
+        android:background="@color/dedede"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+</LinearLayout>

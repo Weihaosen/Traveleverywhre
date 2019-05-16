@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="compp.cumulus.traveleverywhre.activity.AllcommentsActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/to"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp_25"
+        android:src="@drawable/back_white"
+        android:layout_height="@dimen/dp_25" />
+    <TextView
+        android:layout_marginLeft="@dimen/dp_125"
+        android:text="全部评论"
+        android:textColor="@color/c_373737"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/sm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_30"
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

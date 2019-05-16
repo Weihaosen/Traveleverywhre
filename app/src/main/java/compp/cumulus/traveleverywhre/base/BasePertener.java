@@ -19,16 +19,16 @@ public abstract class BasePertener<V extends BaseView> {
 
     protected abstract void iniModel();
 
-    public void bind(V mView) {
-        this.mView=mView;
+    public void bind(V View) {
+        this.mView = View;
     }
+
     public  void onDestory(){
         mView=null;
         if (mModels.size()>0){
             for (Basemodel model : mModels) {
-                model.onDestory();
+               model.onDestory();
             }
-            mModels.clear();
         }
     }
 }

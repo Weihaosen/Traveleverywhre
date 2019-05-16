@@ -6,12 +6,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
+import compp.cumulus.traveleverywhre.widget.LoadingDialog;
 
 /**
  * Created by Lenovo on 2019/5/3.
@@ -19,22 +19,24 @@ import butterknife.ButterKnife;
 
 public  abstract class Basefragment<V extends BaseView,P extends BasePertener> extends Fragment implements BaseView {
     protected  P mpretener;
+    private Unbinder munbinder;
+    private LoadingDialog mLoadingDialog;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View inflate = inflater.inflate(getLayoutId(), null, false);
         ButterKnife.bind(this,inflate);
+        munbinder=ButterKnife.bind(this,inflate);
         mpretener=initPretener();
         if(mpretener!=null){
             mpretener.bind(this);
-            return  inflate;
         }
         initView();
         initPer();
         initData();
         initListener();
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return inflate;
     }
 
     private void initPer() {
@@ -52,4 +54,11 @@ public  abstract class Basefragment<V extends BaseView,P extends BasePertener> e
     protected  void initView(){}
 
     public abstract int getLayoutId() ;
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        munbinder.unbind();
+        mpretener.onDestory();
+        mpretener=null;
+    }
 }

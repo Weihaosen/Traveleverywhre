@@ -7,12 +7,14 @@
     android:layout_height="match_parent"
     tools:context="compp.cumulus.traveleverywhre.activity.YanzhengActivity">
     <ImageView
+        android:id="@+id/fan"
         android:src="@mipmap/back_white"
         android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_35"
         android:layout_width="@dimen/dp_25"
         android:layout_height="@dimen/dp_25" />
     <TextView
+        android:id="@+id/chongxin"
         android:layout_marginLeft="@dimen/dp_252"
         android:layout_marginTop="@dimen/dp_37"
         android:layout_width="@dimen/dp_108"
@@ -38,59 +40,16 @@
         app:icv_et_width="@dimen/dp_44"
         app:icv_et_divider_drawable="@drawable/divider_icv"
         app:icv_et_text_color="@color/c_FF636363"
-        app:icv_et_text_size="@dimen/sp_20"
+        app:icv_et_text_size="@dimen/sp_15"
         app:icv_et_height="@dimen/dp_56"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_56"/>
 
-    <!--<EditText
-        android:id="@+id/ed_one"
-        android:layout_marginTop="@dimen/dp_225"
 
-        android:layout_width="@dimen/dp_44"
-        android:layout_height="@dimen/dp_56"
-        android:background="#FFEAEAEA"
-        android:maxLength="1"
-        android:textSize="@dimen/dp_32"
-        android:gravity="center"
-        />
-    <EditText
-        android:id="@+id/ed_two"
-        android:layout_marginTop="@dimen/dp_225"
-        android:layout_marginLeft="@dimen/dp_129"
-        android:layout_width="@dimen/dp_44"
-        android:layout_height="@dimen/dp_56"
-        android:background="#FFEAEAEA"
-        android:maxLength="1"
-        android:textSize="@dimen/dp_32"
-        android:gravity="center"
-        />
-    <EditText
-        android:id="@+id/ed_three"
-    android:layout_marginTop="@dimen/dp_225"
-    android:layout_marginLeft="@dimen/dp_203"
-    android:layout_width="@dimen/dp_44"
-    android:layout_height="@dimen/dp_56"
-    android:background="#FFEAEAEA"
-    android:maxLength="1"
-    android:textSize="@dimen/dp_32"
-    android:gravity="center"
-    />
-    <EditText
-        android:id="@+id/ed_four"
-        android:layout_marginTop="@dimen/dp_225"
-        android:layout_marginLeft="@dimen/dp_277"
-        android:layout_width="@dimen/dp_44"
-        android:layout_height="@dimen/dp_56"
-        android:background="#FFEAEAEA"
-        android:maxLength="1"
-        android:textSize="@dimen/dp_32"
-        android:gravity="center"
-        />-->
     <TextView
         android:id="@+id/te_qing"
-        android:layout_width="@dimen/dp_59"
-        android:layout_height="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="请稍后…"
         android:visibility="gone"
         android:layout_marginTop="@dimen/dp_314"
@@ -98,6 +57,16 @@
         android:textColor="#FFFA6A13"
         android:textSize="@dimen/sp_14"
         />
+    <TextView
+        android:id="@+id/te_yan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_314"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/dp_158"
+        android:textColor="#FFFA6A13"
+        android:textSize="@dimen/sp_14"
+         />
 
     <TextView
         android:layout_width="match_parent"

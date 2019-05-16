@@ -66,7 +66,7 @@
         android:layout_marginLeft="@dimen/dp_263"
         android:layout_width="@dimen/dp_90"
         android:layout_height="@dimen/dp_30"
-        android:background="@mipmap/button_unavailable"
+        android:background="@drawable/button_unavailable"
         />
     <TextView
         android:id="@+id/te_yan"
