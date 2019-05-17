@@ -42,5 +42,6 @@ public interface Constants {
     String ROUTE = "route";
     String GUANZHU ="guanzhu";
     String SHOUCANG ="shoucang";
+    String PATH_ID ="pathid";
 
 }

@@ -3,7 +3,7 @@
     package="compp.cumulus.traveleverywhre">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <!-- 必须的权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -134,7 +134,10 @@
             android:name="daochulvxing"
             android:value="${CHANNEL_VALUE}" />
 
-        <activity android:name=".activity.VersionActivity"></activity>
+        <activity android:name=".activity.VersionActivity" />
+        <activity android:name=".activity.HollwebActivity" />
+        <activity android:name=".activity.PathParticularsActivity" />
+        <activity android:name=".activity.ThemeActivity"></activity>
     </application>
 
 </manifest>

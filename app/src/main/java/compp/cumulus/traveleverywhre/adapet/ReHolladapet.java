@@ -31,7 +31,7 @@ public class ReHolladapet extends RecyclerView.Adapter {
     private final List<Hollbean.ResultBean.RoutesBean> mArticleList;
     private Context mContext;
     private OnItemClickListener mListener;
-    private OnItemClickListener mYishuListener;
+    private OnItemClickListener mYiListener;
 
     public ReHolladapet(Context context, List<Hollbean.ResultBean.BannersBean> mban, List<Hollbean.ResultBean.RoutesBean> mlist) {
 
@@ -105,6 +105,15 @@ public class ReHolladapet extends RecyclerView.Adapter {
 
             YiH h= (YiH) holder;
             Glide.with(mContext).load(mArticleList.get(newsPosition).getCardURL()).into(h.mimgtu);
+            final int finalNewsPosition = newsPosition;
+            h.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(mYiListener!=null){
+                        mYiListener.OnItemClick(v, finalNewsPosition);
+                    }
+                }
+            });
         }
 
 
@@ -196,6 +205,16 @@ public class ReHolladapet extends RecyclerView.Adapter {
                {
                    this.mListener=listener;
                }
+
+    public interface YiOnItemClickListener
+
+    {
+        void OnItemClick(View v,int position );
+    }
+    public void setYiOnItemClickListener(OnItemClickListener listener)
+    {
+        this.mYiListener=listener;
+    }
 
 
 }

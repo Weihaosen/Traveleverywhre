@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import compp.cumulus.traveleverywhre.R;
 import compp.cumulus.traveleverywhre.activity.HolldetailsActivity;
-import compp.cumulus.traveleverywhre.activity.OtherActivity;
+import compp.cumulus.traveleverywhre.activity.HollwebActivity;
 import compp.cumulus.traveleverywhre.adapet.ReHolladapet;
 import compp.cumulus.traveleverywhre.base.Basefragment;
 import compp.cumulus.traveleverywhre.base.Constants;
@@ -30,7 +30,6 @@ import compp.cumulus.traveleverywhre.bean.Hollbean;
 import compp.cumulus.traveleverywhre.p.Hollfragmentp;
 import compp.cumulus.traveleverywhre.util.Logger;
 import compp.cumulus.traveleverywhre.util.SpUtil;
-import compp.cumulus.traveleverywhre.v.Holldetailsv;
 import compp.cumulus.traveleverywhre.v.Hollfragmentv;
 
 /**
@@ -69,7 +68,17 @@ public class HollFragment extends Basefragment<Hollfragmentv, Hollfragmentp> imp
             @Override
             public void OnItemClick(View v, int position) {
                 Intent intent = new Intent(getContext(), HolldetailsActivity.class);
-                intent.putExtra("mid",mlist.get(position).getId());
+                SpUtil.setParam(Constants.PATH_ID,mlist.get(position).getId());
+                startActivity(intent);
+            }
+        });
+        mreHolladapet.setYiOnItemClickListener(new ReHolladapet.OnItemClickListener() {
+            @Override
+            public void OnItemClick(View v, int position) {
+                Intent intent = new Intent(getContext(), HollwebActivity.class);
+                intent.putExtra("url",mlist.get(position).getContentURL());
+                intent.putExtra("toobal",mlist.get(position).getTitle());
+                Logger.logD("","标题"+mlist.get(position).getTitle()+"网址"+mlist.get(position).getContentURL());
                 startActivity(intent);
             }
         });

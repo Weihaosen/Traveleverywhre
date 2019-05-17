@@ -91,9 +91,9 @@ public class  HolldetailsActivity extends BaseActity<Holldetailsv, Holldetailsp>
 
     @Override
     protected void initData() {
-        int mid = getIntent().getIntExtra("mid", 0);
         String token = (String) SpUtil.getParam(Constants.TOKEN, "");
-        mpretener.setData("api/3.0/content/routes/" + mid, token);
+        int id = (int) SpUtil.getParam(Constants.PATH_ID, 0);
+        mpretener.setData("api/3.0/content/routes/" + id, token);
     }
 
     @Override
